@@ -372,10 +372,10 @@ const BLOG = {
   MAILCHIMP_API_KEY: process.env.MAILCHIMP_API_KEY || null, // 开启mailichimp邮件订阅 APIkey
 
   // 作废配置
-  AVATAR: process.env.NEXT_PUBLIC_AVATAR || 'https://wx4.sinaimg.cn/mw1024/007ZtEFXgy1hi0ndfpuf0j30na0nadhi.jpg', // 作者头像，被notion中的ICON覆盖。若无ICON则取public目录下的avatar.png
+  AVATAR: process.env.NEXT_PUBLIC_AVATAR || 'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F66cb601b-0a79-4587-89d9-bf05763ce080%2F%25E5%25BE%25AE%25E4%25BF%25A1%25E5%259B%25BE%25E7%2589%2587_20230708201104.jpg?table=collection&id=0013cede-6c39-4368-9eca-ab6bb172b35e&t=0013cede-6c39-4368-9eca-ab6bb172b35e&width=800', // 作者头像，被notion中的ICON覆盖。若无ICON则取public目录下的avatar.png
   TITLE: process.env.NEXT_PUBLIC_TITLE || '下午看黄昏', // 站点标题 ，被notion中的页面标题覆盖；此处请勿留空白，否则服务器无法编译
   HOME_BANNER_IMAGE:
-        process.env.NEXT_PUBLIC_HOME_BANNER_IMAGE || 'https://wx3.sinaimg.cn/mw1024/007ZIN3Ugy1hjlqqs8x5sj31gi0z0wuu.jpg', // 首页背景大图, 会被notion中的封面图覆盖，若无封面图则会使用代码中的 /public/bg_image.jpg 文件
+        process.env.NEXT_PUBLIC_HOME_BANNER_IMAGE || 'https://bu.dusays.com/2023/11/02/6543687366ed7.jpg', // 首页背景大图, 会被notion中的封面图覆盖，若无封面图则会使用代码中的 /public/bg_image.jpg 文件
   DESCRIPTION:
         process.env.NEXT_PUBLIC_DESCRIPTION || '梦想发财~', // 站点描述，被notion中的页面描述覆盖
 
@@ -389,7 +389,7 @@ const BLOG = {
   DEBUG: process.env.NEXT_PUBLIC_DEBUG || false, // 是否显示调试按钮
   ENABLE_CACHE: process.env.ENABLE_CACHE || process.env.npm_lifecycle_event === 'build', // 缓存在开发调试和打包过程中选择性开启，正式部署开启此功能意义不大。
   isProd: process.env.VERCEL_ENV === 'production', // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)  isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  VERSION: process.env.NEXT_PUBLIC_VERSION // 版本号
+  VERSION: process.env.NEXT_PUBLIC_VERSION === '1.0'// 版本号
 }
 
 module.exports = BLOG
