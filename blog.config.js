@@ -211,6 +211,13 @@ FONT_AWESOME: process.env.NEXT_PUBLIC_FONT_AWESOME_PATH || 'https://cdnjs.cloudf
       url: 'http://music.163.com/song/media/outer/url?id=1974443814.mp3',
       cover:
             'https://www.cancan.love/zl.png'
+    },
+    {
+      name: '鼓楼',
+      artist: '赵雷',
+      url: 'http://music.163.com/song/media/outer/url?id=447926067.mp3',
+      cover:
+            'https://www.cancan.love/zl.png'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
